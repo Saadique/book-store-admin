@@ -55,7 +55,6 @@ export default {
     };
   },
   methods: {
-    // Requisição POST para criar um novo usuário
     async createBook() {
       await fetch('http://127.0.0.1:8000/api/books/', {
         method: 'POST',
@@ -78,7 +77,6 @@ export default {
       });
     }
   },
-  // Função para colocar ou tirar a classe "show" no Modal
   computed: {
     modalClass() {
       return this.showModal ? 'show' : '';

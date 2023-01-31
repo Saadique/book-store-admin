@@ -81,7 +81,6 @@ export default {
   },
   
   created() {
-    // evento de click
     EventBus.$on('click', (modal, book) => {
       this.showModal = !modal;
       this.book = book;
